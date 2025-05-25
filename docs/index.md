@@ -2,6 +2,8 @@
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
+![Image）](https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80)
+
 ## Commands
 
 * `mkdocs new [dir-name]` - Create a new project.
