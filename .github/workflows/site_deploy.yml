@@ -13,8 +13,13 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v3
      
-      - name: Install MkDocs
-        run: python3 -m pip install -r requirements.txt     
+      - name: Install dependency
+        run: python3 -m pip install -r requirements.txt
+
+      - name: Download PlantUML JAR
+        run: |
+          curl -L -o plantuml.jar https://github.com/plantuml/plantuml/releases/download/v1.2025.2/plantuml-mit-1.2025.2.jar
+
       - name: Deploy HTML files
         run: mkdocs build --verbose --clean --strict
      

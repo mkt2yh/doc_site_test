@@ -1,1 +1,5 @@
 site_name: My Docs
+
+markdown_extensions:
+  - plantuml_markdown:
+      plantuml_cmd: java -jar plantuml.jar
